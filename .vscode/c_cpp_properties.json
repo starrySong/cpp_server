@@ -1,0 +1,17 @@
+{
+    "version": 4,
+    "configurations": [
+      {
+        "name": "Win32",
+        "includePath": [
+          "${workspaceFolder}/**",
+          "${workspaceFolder}/include" // 추가적인 헤더 파일 경로
+        ],
+        "defines": [],
+        "compilerPath": "D:/c_setting/mingw64/bin/g++.exe", // 컴파일러 경로 (MinGW 사용 시)
+        "cStandard": "c11",
+        "cppStandard": "c++17",
+        "intelliSenseMode": "gcc-x64"
+      }
+    ]
+  }
