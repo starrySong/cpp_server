@@ -9,8 +9,6 @@
           "-g",
           "-I",
           "${workspaceFolder}/include",
-          "${workspaceFolder}/src/tcp/**",
-          "${workspaceFolder}/src/command/**",
           "${workspaceFolder}/src/main.cpp", // 빌드할 소스 파일
           "-o",
           "${workspaceFolder}/main.exe", // 출력 파일

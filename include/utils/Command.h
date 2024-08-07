@@ -4,7 +4,7 @@
 class Command{
     public:
         virtual ~Command() = default;
-        virtual void execute() = 0;
+        virtual int execute(std::string message) = 0;
 };
 
 #endif //end 

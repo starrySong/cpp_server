@@ -1,20 +1,21 @@
-#include <winsock2.h>
 #include <iostream>
-#include <memory>
 
-#include "TcpServer.h"
+#include "ServerSocket.h"
+
+using json = nlohmann::json;
 
 #define PORT 65432
-#define BUFFER_SIZE 1024
 
 int main() {
-    //TcpServer *tcpServer = new TcpServer(PORT);
+   SocketServer server(PORT);
 
-    //tcpServer->start();
+    if (server.start()) {
+        std::cout << "Server is running. Press Enter to stop..." << std::endl;
+        std::cin.get(); // Wait for user input to stop the server
+        server.stop();
+    } else {
+        std::cerr << "Server failed to start" << std::endl;
+    }
 
-    //tcpServer->stop();
-    
-
-    //delete tcpServer;
     return 0;
 }

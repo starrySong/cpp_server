@@ -10,12 +10,18 @@ class ConcreteCommand : public Command {
         ConcreteCommand(Receiver *receiver);
        
 
-        void execute();
+        int execute(std::string message);
 
     private:
         Receiver* receiver;
 
 };
 
+ConcreteCommand::ConcreteCommand(Receiver* receiver)
+    : receiver(receiver) {}
+
+int ConcreteCommand::execute(std::string message) {
+    return receiver->action(message);
+}
 
 #endif

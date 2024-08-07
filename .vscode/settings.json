@@ -51,6 +51,7 @@
         "map": "cpp",
         "numeric": "cpp",
         "ratio": "cpp",
-        "iomanip": "cpp"
+        "iomanip": "cpp",
+        "thread": "cpp"
     }
 }
