@@ -14,6 +14,7 @@ using json = nlohmann::json;
 class MessageConfig {
     public:
         MessageConfig();
+        ~MessageConfig();
         std::string run(std::string message);
     private:
         Login *login;
@@ -33,6 +34,12 @@ MessageConfig::MessageConfig(){
     openServer = new OpenServer();
 
     setup();
+}
+MessageConfig::~MessageConfig(){
+    
+    delete login;
+    delete openServer;
+    delete invoker;
 }
 
 void MessageConfig::setup(){
