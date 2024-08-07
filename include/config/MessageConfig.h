@@ -38,8 +38,8 @@ MessageConfig::MessageConfig(){
 void MessageConfig::setup(){
     //custom message add...
     //메시지 등록
-    invoker->setCommand("login",std::make_unique<ConcreteCommand>(login));
-    invoker->setCommand("open_server",std::make_unique<ConcreteCommand>(openServer));
+    invoker->setCommand("login", std::make_unique<ConcreteCommand>(login));
+    invoker->setCommand("open_server", std::make_unique<ConcreteCommand>(openServer));
 }
 
 //메시지 호출

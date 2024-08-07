@@ -1,8 +1,8 @@
 #ifndef OPENSERVER_H
 #define OPENSERVER_H
 
-#include"Receiver.h"
-#include <iostream>
+#include"utils/Receiver.h"
+#include<iostream>
 
 class OpenServer : public Receiver{
     public:
@@ -11,7 +11,6 @@ class OpenServer : public Receiver{
 
 };
 int OpenServer::action(std::string message){
-
     std::cout<<"openServer"<<std::endl;
     return 0;
 }
