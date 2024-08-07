@@ -1,20 +1,20 @@
 #include <winsock2.h>
 #include <iostream>
+#include <memory>
 
 #include "TcpServer.h"
-
 
 #define PORT 65432
 #define BUFFER_SIZE 1024
 
 int main() {
-    TcpServer *tcpServer = new TcpServer(PORT);
+    //TcpServer *tcpServer = new TcpServer(PORT);
 
-    tcpServer->start();
+    //tcpServer->start();
 
-    tcpServer->stop();
+    //tcpServer->stop();
+    
 
-
-    delete tcpServer;
+    //delete tcpServer;
     return 0;
 }

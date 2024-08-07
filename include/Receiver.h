@@ -3,9 +3,7 @@
 
 class Receiver {
 public:
-    void action1();
-    void action2();
-    void action3();
+    virtual void action() = 0;
 };
 
 #endif // RECEIVER_H

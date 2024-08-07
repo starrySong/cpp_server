@@ -7,13 +7,13 @@
 
 class ConcreteCommand : public Command {
     public:
-        ConcreteCommand(Receiver& receiver, std::function<void()> action);
+        ConcreteCommand(Receiver *receiver);
+       
 
-        void execute() override;
+        void execute();
 
     private:
-        Receiver& receiver;
-        std::function<void()> action;
+        Receiver* receiver;
 
 };
 
