@@ -2,8 +2,6 @@
 
 #include "ServerSocket.h"
 
-using json = nlohmann::json;
-
 #define PORT 65432
 
 int main() {
